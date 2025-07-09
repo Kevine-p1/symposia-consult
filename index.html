@@ -12,8 +12,9 @@
     <nav class="nav_bar"> 
         <div class="container">
             <div class="logo">
-                <h1>SYMPOSIA</h1>
-                <h2>CONSULT</h2>
+                <!--<h1>SYMPOSIA</h1>
+                <h2>CONSULT</h2>-->
+                <img src="new/cropped-logo-sc-1.png" alt="logo">
             </div>
             <div class="menu_bar">
                 <a href="">Home</a>
@@ -29,7 +30,7 @@
                 </div>
             </div>
             <div class="container2">
-              <div class="search_icon" onclick="openSearch()">🔍</div>
+              <div class="search_icon" onclick="openSearch()"><i class="fas fa-search"></i></div>
               <div class="search_overlay" id="searchOverlay">
                 <div class="close_btn" onclick="closeSearch()">✖</div>
                 <div class="search_box">
@@ -61,25 +62,28 @@
             
               <div class="slider">
                   <div class="slide one">
-                     <!--<img src="images/images_slide1.jpeg" alt="Image 1" class="image"> -->
-                     <p class="slides_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis sed necessitatibus eligendi iusto ipsum quibusdam debitis nisi adipisci voluptas eveniet fuga itaque ipsam id in sequi eaque, quis provident.</p>
+                     <img src="new/Symposia_slide1.png" alt="Image 1" class="image">
+                   <!--  <p class="slides_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis sed necessitatibus eligendi iusto ipsum quibusdam debitis nisi adipisci voluptas eveniet fuga itaque ipsam id in sequi eaque, quis provident.</p> -->
                     </div>
                  <div class="slide two" style="background-image: url('images/images_slide2.jpeg');">
-                     <!--<img src="images/images_slide1.jpeg" alt="Image 1" class="image"> -->
-                      <p class="slides_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum delectus, commodi repudiandae, eligendi nesciunt magni voluptatem officia neque officiis, alias illo culpa est rerum.</p>
+                      <img src="new/Symposia_slide2.png" alt="Image 1" class="image">
+                   <!--  <p class="slides_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis sed necessitatibus eligendi iusto ipsum quibusdam debitis nisi adipisci voluptas eveniet fuga itaque ipsam id in sequi eaque, quis provident.</p> -->
                   </div>
                  <div class="slide three" style="background-image: url('images/images_slide3.avif');">
-                     <!--<img src="images/images_slide1.jpeg" alt="Image 1" class="image"> -->
-                     <p class="slides_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias doloribus unde nihil quas sint, commodi corrupti numquam excepturi necessitatibus veniam voluptatum libero ipsum placeat labore reiciendis dolor delectus eius dolore facere temporibus esse iste architecto?</p>
+                     <img src="new/Symposia_slide3.png" alt="Image 1" class="image">
+                   <!--  <p class="slides_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis sed necessitatibus eligendi iusto ipsum quibusdam debitis nisi adipisci voluptas eveniet fuga itaque ipsam id in sequi eaque, quis provident.</p> -->
                  </div>
                  <div class="slide four" style="background-image: url('images/images_slide4.jpg');">
-                     <!--<img src="images/images_slide1.jpeg" alt="Image 1" class="image"> -->
-                     <p class="slides_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit illo mollitia autem ut aliquid, porro cumque itaque eveniet facilis perferendis molestias commodi. Voluptates nam similique dolore ex, velit iste animi nemo dolores error, sequi deleniti tenetur ipsa placeat architecto doloribus?</p>
+                      <img src="new/Symposia_slide4.png" alt="Image 1" class="image">
+                   <!--  <p class="slides_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis sed necessitatibus eligendi iusto ipsum quibusdam debitis nisi adipisci voluptas eveniet fuga itaque ipsam id in sequi eaque, quis provident.</p> -->
                  </div>
                  <div class="slide five" style="background-image: url('images/images_slide5.jpeg');">
-                     <!--<img src="images/images_slide1.jpeg" alt="Image 1" class="image"> -->
-                     <p class="slides_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ipsa debitis possimus similique voluptatem quia vel officiis repellat pariatur! Facere rerum, velit culpa ullam qui optio, maiores animi repudiandae tempora dignissimos hic, iste praesentium quos!</p>
+                     <img src="new/Symposia_slide5.png" alt="Image 1" class="image">
+                   <!--  <p class="slides_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis sed necessitatibus eligendi iusto ipsum quibusdam debitis nisi adipisci voluptas eveniet fuga itaque ipsam id in sequi eaque, quis provident.</p> -->
                  </div>
+                  <div class="slide five" style="background-image: url('images/images_slide5.jpeg');">
+                     <img src="new/Symposia_slide6.png" alt="Image 1" class="image">
+                   <!--  <p class="slides_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque perferendis sed necessitatibus eligendi iusto ipsum quibusdam debitis nisi adipisci voluptas eveniet fuga itaque ipsam id in sequi eaque, quis provident.</p> -->
              </div>
              <script>
                    let currentIndex = 0;
@@ -131,7 +135,6 @@
         </section>         
         <section class="what_we_do2">
             <div class="parent_img_div2">
-                <img src="" alt="">
                 <div class="child_what_we_do1">
                     <h2>What We Do</h2>
                     <p class="title">
@@ -147,7 +150,7 @@
                     </a>
                 </div>
             </div>
-        </section>         
+        </section>       
     </main>
     <footer>
         <div class="container_footer">
@@ -199,7 +202,19 @@
              <p>
                  <a href="#"> SYMPOSIA CONSULT</a> © 2025. All rights reserved.
             </p>
+            <button onclick="scroll_up()" class="top-btn">
+                 <i class="fas fa-chevron-up"></i>
+            </button>
        </div>
+       <script>
+            function scroll_up() {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+              }
+    </script>
+
     </footer>    
 </body>
 </html>
