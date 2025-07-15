@@ -372,7 +372,172 @@ footer{
     font-size: medium;
     margin-top: 10px;
 }
+/* what we do page*/
+.parent1_what_we_do{
+    position: relative;
+    background-image: url('images/what_we_do_img.webp');
+    background-repeat: no-repeat;
+    width: 700px;
+     background-size: cover;
+    margin-left: 25%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
 
 
+.child1_what_we_do{
+   position: relative;
+    left:35%;
+    top: 40px;
+    background-color: ghostwhite;
+    width: 700px;
+    height: 750px;
+    border: 1px solid ghostwhite;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+   justify-content: center;
+    align-items: center;
+    
 
+    
+   /* margin-left: 20px;
+    padding-left: 20px;*/
+    
+}
+.child1_what_we_do h6{
+    color:rgb(53, 63, 201);
+    font-weight: lighter;
+    align-self: flex-start;
+    margin-left:120px ;
+    font-size: medium;
+    margin-top: 10px;
+}
+.child1_what_we_do h3{
+     color: black;
+    font-weight: lighter;
+    margin-right: 10%; 
+}
+.child1_what_we_do button{
+    background-color:rgb(53, 63, 201) ;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    margin-right: 250px;
+}
+.child2_what_we_do button{
+    background-color:rgb(53, 63, 201) ;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    margin-right: 250px;
+}
+.child1_what_we_do p{
+   text-align: justify;
+    max-width: 55ch;  
+}
+.child1_what_we_do li{
+    text-align: justify;
+    max-width: 40ch; 
+    margin: 20px;
+    margin-left: 10px;  
+}
+.child2_what_we_do li{
+    text-align: justify;
+    max-width: 40ch; 
+    margin: 20px;
+    margin-left: 10px;  
+}
+.parent2_what_we_do{
+   position: relative;
+    background-image: url('images/what_we_do_img.webp');
+    background-repeat: no-repeat;
+    width: 700px;
+     background-size: cover;
+    margin-left: 25%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.child2_what_we_do{
+  position: relative;
+    left:35%;
+    top: 40px;
+    background-color: ghostwhite;
+    width: 700px;
+    height: 750px;
+    border: 1px solid ghostwhite;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+   justify-content: center;
+    align-items: center;
+    
+}
+.child2_what_we_do h6{
+     color:rgb(53, 63, 201);
+    font-weight: lighter;
+    align-self: flex-start;
+    margin-left:120px ;
+    font-size: medium;
+    margin-top: 10px;
+}
+.child2_what_we_do h3{
+     color: black;
+    font-weight: lighter;
+    margin-right: 10%;  
+}
+.what_we_do_page{
+    background-color: #fff;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.input_first{
+    width: 250px;
+    height: 40px;
+    background-color: ghostwhite;
+    border-color: ghostwhite;
+
+}
+.Language{
+     width: 250px;
+    height: 48px;
+    background-color: ghostwhite;
+    border-color:  ghostwhite;
+}
+.input_second{
+    width: 60px;
+    background-color: ghostwhite;
+}
+.container_what{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    
+    gap: 20px;
+    column-gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+}
+.copy_right_what{
+    align-self: flex-end;
+}
+.copy_right_what button{
+     width: 50px;
+    background-color:rgb(53, 63, 201) ;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+ 
 
