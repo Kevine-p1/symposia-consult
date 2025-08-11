@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Kevine Uwase">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>home page</title>
+</head>
+<body>
+    <nav class="nav_bar"> 
+        <div class="container">
+            <div class="logo">
+                <img src="images/cropped-logo-sc-1.png" alt="logo">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="menu_bar">
+                <a href="index.html">Home</a>
+                <a href="who_we_are.html">Who Are We</a>
+                <a href="what_we_do.html">What We DO</a>
+                <a href="our_clients.html">Our Clients</a>
+                <a href="news_events.html">News&Events</a>
+            </div>
+            <script>
+                function toggleMenu() {
+                const menu = document.getElementById("menu_bar");
+                menu.classList.toggle("show");
+                }
+         </script>
+
+            <div class="menu">:
+                <div class="drop_down">
+                    <a href="contact_us.html" target="_blank">Contact Us</a>
+                    <a href="what_we_do.html" target="_blank">What We Do</a>
+                </div>
+            </div>
+            <div class="container2">
+              <div class="search_icon" onclick="openSearch()"><i class="fas fa-search"></i></div>
+              <div class="search_overlay" id="searchOverlay">
+                <div class="close_btn" onclick="closeSearch()">✖</div>
+                <div class="search_box">
+                    <input type="text" placeholder="Search.......">
+                </div>
+            </div>
+            <script>
+                function openSearch(){
+                    document.getElementById("searchOverlay").style.display = "block";
+                }
+                function closeSearch(){
+                    document.getElementById("searchOverlay").style.display = "none";
+                }
+            </script>
+            <div class="contact">
+                <a href="contact_us.html" target="_blank">
+                    <i class="fas fa-id-badge" style="color:#fff; opacity:25%;"></i> contact Us
+                </a>
+            </div>
+          </div>
+        </div>             
+    </nav>
+    <main>
+        <section class="slides">
+              <div class="slider">
+                  <div class="slide one" style="background-image: url(images/Symposia_slide1.png);">
+                    </div>
+                 <div class="slide two" style="background-image: url(images/Symposia_slide2.png);">
+                       
+                  </div>
+                 <div class="slide three" style="background-image: url(images/Symposia_slide3.png);">
+                     
+                 </div>
+                 <div class="slide four" style="background-image: url(images/Symposia_slide4.png);">
+                       
+                 </div>
+                 <div class="slide five" style="background-image: url(images/Symposia_slide5.png);">
+                        
+                 </div>
+                  <div class="slide five" style="background-image: url(images/Symposia_slide6.png);">
+                   </div> 
+             </div>
+             <script>
+                   let currentIndex = 0;
+                   const slides = document.querySelectorAll(".slide");
+
+                   function showSlide(index) {
+                       slides.forEach((slide, i) => {
+                       slide.style.display = i === index ? "block" : "none";
+                      });
+                     }
+
+                    function nextSlide() {
+                        currentIndex = (currentIndex + 1) % slides.length;
+                        showSlide(currentIndex);
+                     }
+
+                    function prevSlide() {
+                       currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                       showSlide(currentIndex);
+                     }
+
+                           // Initial show
+                    showSlide(currentIndex);
+
+                           // Auto slide
+                    setInterval(nextSlide, 3000);
+             </script>
+
+        </section>
+        <section class="what_we_do1">
+            <div class="parent_img_div1">
+                <div class="child_what_we_do1">
+                    <h2>What We Do</h2>
+                    <p class="title">
+                        Event Management and Conference Logistics
+                    </p>
+                    <p class="content">
+
+                        In 2006, Symposia introduced its event management services and has since
+                        gained considerable capacity and experience in coordinating events and 
+                        handling all the related logistics.
+                    </p>
+                    <a href="what_we_do.html" class="read_more">
+                      <button type="button">Read more</button>
+                    </a>
+                </div>
+            </div>
+        </section>         
+        <section class="what_we_do2">
+            <div class="parent_img_div2">
+                <div class="child_what_we_do1">
+                    <h2>What We Do</h2>
+                    <p class="title">
+                        Simultaneous Interpretation and Translation
+                    </p>
+                    <p class="content">
+                        Symposia Consult offers high quality Simultaneous
+                        Interpretation and Translation services as well as 
+                        rental of Simultaneous Interpretation Systems (SIS).
+                    </p>
+                    <a href="what_we_do.html" class="read_more">
+                      <button type="button">Read more</button>
+                    </a>
+                </div>
+            </div>
+        </section>       
+    </main>
+    <footer>
+        <div class="container_footer">
+            <div class="history">
+                <p>Symposia Consult was born out of a vision of two 
+                    African entrepreneurs <br> – Mr. Victor Imboua-Niava and Mr. Aimable Rudakemwa Rumongi
+                     <br>– both seasoned conference interpreters.
+                </p>
+                <div class="social_media">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+               </div>
+            </div>
+            <div class="subscribtion">
+                <h2>Subscribe</h2>
+                <label for="email">Subscribe to our e-mail list and stay up-to-date with all our news.</label> <br>
+                <input type="email" id="email" name="email" placeholder="example@example.com"> 
+                <a href="contact_us.html">
+                     <button type="button">Contact Us</button>
+                </a>
+            </div>
+            <div class="contact_info">
+                <h2>Contact</h2>
+                
+                <h3>
+                    <i class="fas fa-map-marker-alt"></i>
+                        Address
+                </h3>
+                <p>
+                    KG 331 ST, Nyarutarama <br>
+                    House No 6 Kigali, Rwanda 
+                </p>
+                <h3>
+                     <i class="fas fa-envelope"></i>
+                     Email
+                </h3>
+                <p>symposiasarl@yahoo.fr</p>
+                <h3>
+                    <i class="fas fa-phone"></i>
+                    Phone
+                </h3>
+                <p>
+                    +250 788 304 662 | +250 788 300 380
+                </p>
+            </div>
+
+        </div>
+
+        <div class="copy_right">
+             <p>
+                 <a href="#"> SYMPOSIA CONSULT</a> © 2025. All rights reserved.
+            </p>
+            <button onclick="scroll_up()" class="top-btn">
+                 <i class="fas fa-chevron-up"></i>
+            </button>
+       </div>
+       <script>
+            function scroll_up() {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+              }
+    </script>
+
+    </footer>    
+</body>
+</html>

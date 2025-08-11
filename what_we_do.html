@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Kevine Uwase">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>What We Do</title>
+</head>
+<body>
+    <nav class="nav_bar"> 
+        <div class="container">
+            <div class="logo">
+                <!--<h1>SYMPOSIA</h1>
+                <h2>CONSULT</h2>-->
+                <img src="images/cropped-logo-sc-1.png" alt="logo">
+            </div>
+            <div class="menu_bar">
+                <a href="index.html">Home</a>
+                <a href="who_we_are.html">Who Are We</a>
+                <a href="what_we_do.html">What We DO</a>
+                <a href="our_clients.html">Our Clients</a>
+                <a href="news_events.html">News&Events</a>
+            </div>
+            <div class="menu">:
+                <div class="drop_down">
+                    <a href="contact_us.html" target="_blank">Contact Us</a>
+                    <a href="what_we_do.html" target="_blank">What We Do</a>
+                </div>
+            </div>
+            <div class="container2">
+              <div class="search_icon" onclick="openSearch()"><i class="fas fa-search"></i></div>
+              <div class="search_overlay" id="searchOverlay">
+                <div class="close_btn" onclick="closeSearch()">✖</div>
+                <div class="search_box">
+                    <input type="text" placeholder="Search.......">
+                </div>
+            </div>
+            <script>
+                function openSearch(){
+                    document.getElementById("searchOverlay").style.display = "block";
+                }
+                function closeSearch(){
+                    document.getElementById("searchOverlay").style.display = "none";
+                }
+            </script>
+            <div class="contact">
+                <a href="contact_us.html" target="_blank">
+                    <i class="fas fa-id-badge" style="color:#fff; opacity:25%;"></i> contact Us
+                </a>
+            </div>
+          </div>
+        </div>             
+    </nav>
+    <main>
+        <div class="background_vd">
+            <video autoplay loop muted>
+              <source src="images/what_we_do.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+        </div>
+        <div class="parent1_what_we_do">
+                <!--<img src="images/images_slide2.jpeg" alt="">-->
+                <div class="child1_what_we_do">
+                    <h6>Our Services</h6>
+                    <h3>Event Management and Conference Logistics</h3>                    
+                    <p class="content">
+                      In 2006, Symposia introduced its event management services and has since gained considerable capacity and experience in coordinating events and handling all the related logistics.
+                    </p>
+                    <ul>
+                        <li>
+                            We can deliver a full package of event management services for small or large events (up to 1000 participants).
+                        </li>
+                        <li>
+                            The event management package includes: Simultaneous Interpretation & Translation; Secretarial services (registration, computers, photocopiers and printers).
+                        </li>
+                        <li>
+                            Branding & Advertising (design, production & printing of promotional materials, photo and video coverage of the event, decoration).
+                        </li>
+                        <li>
+                            Conference Logistics (transport, venue identification and negotiation, hotel accommodation, ushers), Entertainment (cultural evenings, cocktails, dinners, concerts, post event tours) and overall Event Coordination.
+                       </li>
+                    </ul>
+
+                    <a href="contact_us.html">
+                      <button type="button">Contact Us</button>
+                    </a>
+                </div>
+        </div>
+         <div class="parent2_what_we_do">
+                <!--<img src="images/images_slide2.jpeg" alt="">-->
+                <div class="child2_what_we_do">
+                    <h6>Our Services</h6>
+                    <h3>Simultaneous Interpretation and Translation</h3>                    
+                    <ul>
+                        <li>
+                           Symposia Consult offers high quality Simultaneous Interpretation and Translation services as well as rental of Simultaneous Interpretation Systems (SIS).
+                        </li>
+                        <li>
+                            The conference interpreters and translators in our network are some of the most experienced in the regions we work in, guaranteeing a highly professional experience for all our clients.
+                        </li>
+                        <li>
+                           All our Interpreters Booths and Simultaneous Interpretation Systems comply with ISO 2603 for Interpretation Systems.
+                        </li>
+                        <li>
+                            We have the capacity to service conferences and meetings of up to 2000 participants and 7 languages.
+                       </li>
+                    </ul>
+
+                    <a href="contact_us.html">
+                      <button type="button">Contact Us</button>
+                    </a>
+                </div>
+        </div>
+        
+    </main>
+    <footer class="what_we_do_page">
+        <h1>Get a Quote</h1>
+        <div class="container_what">
+            <input type="text" placeholder="Full Name" class="input_first">
+            <input type="email" placeholder="Email Address" class="input_first">
+            <input type="tel" placeholder="Phone Number" class="input_first">
+            <select class="Language">
+                <option disabled selected>Source Language</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+                <option value="de">German</option>
+                <option value="pt">Portuguese</option>
+                <option value="it">Italian</option>
+                <option value="sw">Swahili</option>
+                <option value="ar">Arabic</option>
+                <option value="zh">Chinese</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="ru">Russian</option>
+                <option value="hi">Hindi</option>
+                <option value="am">Amharic</option>
+                <option value="rw">Kinyarwanda</option>
+          </select>
+
+          <select class="Language">
+             <option disabled selected>Target Language</option>
+             <option value="en">English</option>
+             <option value="fr">French</option>
+             <option value="es">Spanish</option>
+             <option value="de">German</option>
+             <option value="pt">Portuguese</option>
+             <option value="it">Italian</option>
+             <option value="sw">Swahili</option>
+             <option value="ar">Arabic</option>
+             <option value="zh">Chinese</option>
+             <option value="ja">Japanese</option>
+             <option value="ko">Korean</option>
+             <option value="ru">Russian</option>
+             <option value="hi">Hindi</option>
+             <option value="am">Amharic</option>
+             <option value="rw">Kinyarwanda</option>
+         </select>
+         <label>
+             <input type="radio" name="clientType" value="company" class="input_second">
+             Company
+          </label>
+
+         <label>
+             <input type="radio" name="clientType" value="private" class="input_second">
+             Private
+         </label>
+
+        </div>
+        <div class="copy_right_what">
+             
+            <button onclick="scroll_up()" class="top-btn">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+       </div>
+       <script>
+            function scroll_up() {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+              }
+    </script>
+
+    </footer>    
+</body>
+</html>
